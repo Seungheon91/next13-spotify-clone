@@ -11,7 +11,6 @@ interface ListItemProps {
 }
 const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
   const router = useRouter();
-  console.log(image);
 
   const onClick = () => {
     router.push(href);
